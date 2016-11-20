@@ -54,12 +54,12 @@ class cf
 
     protected function _getvows($string) //This function calls the getl function with consonants...
     {
-        return $this->_getLettere($string, $this->_vows);
+        return $this->_getl($string, $this->_vows);
     }
 
     protected function _getcons($string) //...and this calls it with vowels.
     {
-        return $this->_getLettere($string, $this->_cons);
+        return $this->_getl($string, $this->_cons);
     }
 
     protected function _addMissingX($string) //This function adds some X if the string is shorter than 3 chars.
