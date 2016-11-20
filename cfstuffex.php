@@ -125,6 +125,7 @@ class cf
 
         $ccons = $this->_getcons($cognome);
         
+        
         for ($i=0; $i<3; $i++) 
         {
             if (array_key_exists($i, $ccons)) 
