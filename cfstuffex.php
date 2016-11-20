@@ -1,5 +1,7 @@
 <?php
 
+//Special thanks to Nicholas Miazzo, he helped me both deploying this stuff and general bug fixing. I owe him a coffee, that's for sure.
+
     if (isset($_POST['sub'])) //When data is submitted by the button
     {
         $name = $_POST["name"]; 
