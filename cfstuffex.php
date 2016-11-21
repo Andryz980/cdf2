@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php
 
 //Special thanks to Nicholas Miazzo, he helped me both deploying this stuff and general bug fixing. I owe him a coffee, that's for sure.
@@ -13,7 +15,7 @@
         echo callofthewild($name, $surname, $bday, $gen, $city);
     }
 
-function callofthewild($name, $surname, $bday, $gen, $city)
+function callofthewild($name, $surname, $bday, $gen, $city) //Start.
 {
     $tmp = new cf;
     return $tmp->startdotexe($name, $surname, $bday, $gen, $city);
@@ -157,12 +159,12 @@ class cf
 
     protected function _calcolaDataNascita($data, $gen) //OKAY
     //This function returns the five symbols after the six ones. These symbols are related to a person's date of birth and gender.
-    {
-        $dn = explode('/', $data); //Separates the "01/01/1900" format in an array containing the single elements.
+    {        
+        $dn = explode('-', $data); //Separates the "01/01/1900" format in an array containing the single elements.
 
-        $giorno = (int) @$dn[0];
+        $giorno = (int) @$dn[2];
         $mese   = (int) @$dn[1];
-        $anno   = (int) @$dn[2];
+        $anno   = (int) @$dn[0];
         
         if ($anno > 1000)
             $aa = substr($anno, -2); //Removes the first two numbers from the year.
@@ -185,7 +187,7 @@ class cf
 
     protected function _calcolaComune($comune)
     {
-        return "L840"; //WIP
+        return $comune;
     }
 
     protected function _ccontrollo($codice)
@@ -216,3 +218,15 @@ class cf
         return $codice = $codice . $this->_ccontrollo($codice);
     } 
 }
+?>
+    
+<head>
+    <title>Codice!</title>
+</head>
+    
+<body style="background-color:lavender">
+    <div class="container">
+        
+    </div>
+</body>
+</html>
