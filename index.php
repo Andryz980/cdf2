@@ -15,22 +15,26 @@
   <div class="container">
     <h2 class="text-center">Calcolo codice fiscale</h2>
     <form action="cfstuffex.php" method="post">
-      <div class="form-group">
+      <div class="col-xs-6">
         <label>Nome:</label>
         <input class="form-control" name="name">
       </div>
       
-      <div class="form-group">
+      <div class="col-xs-6">
         <label>Cognome:</label>
         <input class="form-control" name="surname">
       </div>
-
-      <div>
+        
+        <div class="col-xs-12" style="height:20px;"></div>
+        
+      <div class="col-xs-12">
         <label>Data di nascita:</label>
         <input type="date" name="bday">
       </div>
       
-      <div class="radio">
+        <div class="col-xs-12" style="height:20px;"></div>
+        
+      <div class="col-xs-12">
         <label>
             <input type="radio" name="gen" value="Male"> Maschio
         </label>
@@ -39,7 +43,9 @@
         </label>
       </div>
         
-        <div class="form-group">
+        <div class="col-xs-12" style="height:20px;"></div>
+        
+        <div class="col-xs-12">
         <label>Comune di nascita:</label>
         <select class="form-control" name="city">
           <?php
@@ -59,7 +65,11 @@
         </select>
       </div>
         
-      <button type="submit" name="sub" class="btn btn-primary">Submit</button>
+        <div class="col-xs-12" style="height:30px;"></div>
+        
+        <div class="text-center">
+            <button type="submit" name="sub" class="btn btn-primary">Submit</button>
+        </div>
     </form>
   </div>
 
