@@ -28,7 +28,7 @@
         
         <div class="col-xs-12" style="height:20px;"></div>
         
-      <div class="col-xs-6">
+      <div class="col-xs-12">
         <label>Data di nascita:</label>
         <input class="form-control" type="date" name="bday" placeholder="gg-mm-aa / gg-mm-aaaa">
       </div>
