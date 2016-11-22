@@ -16,7 +16,7 @@
 
   <div class="container">
     <h2 class="text-center">Calcolo codice fiscale</h2>
-    <form method="post">
+    <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
       <div class="col-xs-6">
         <label>Nome:</label>
         <input class="form-control" name="name">
