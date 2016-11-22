@@ -84,13 +84,20 @@
         $gen = $_POST["gen"]; 
         $city = $_POST["city"]; 
         
-        echo callofthewild($name, $surname, $bday, $gen, $city);
+        finalprint(callofthewild($name, $surname, $bday, $gen, $city));
     }
 function callofthewild($name, $surname, $bday, $gen, $city) //Start.
 {
     $tmp = new cf;
     return $tmp->startdotexe($name, $surname, $bday, $gen, $city);
 }
+     
+function finalprint($output)
+{
+      echo "<div class="col-xs-12>$output</div>";
+}
+     
+     
 class cf
 {
     protected $_cons = array('B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z');
