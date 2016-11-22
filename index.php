@@ -54,12 +54,12 @@
             $myfile=fopen("comuni.csv","r") or die("unable to open file!");
             while(!feof($myfile))
             {
-              $linea = fgets($myfile);
+              $opt = fgets($myfile);
               if(!feof($myfile))
                 {
-                  $array = explode(",", $linea);
-                  $com = trim($array[1]);
-                  echo"<option value=" . $array[0] . ">". $com . "</option>";
+                  $vec = explode(",", $opt);
+                  $dd = trim($vec[1]);
+                  echo"<option value=" . $vec[0] . ">". $dd . "</option>";
                 }
             }	
           ?>
