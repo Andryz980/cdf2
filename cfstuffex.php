@@ -150,7 +150,6 @@ class cf
             {
                 $code = $code . $cvoc[$i];
                 $i++;
-                echo $i;
             }
         }
         //echo $code;
