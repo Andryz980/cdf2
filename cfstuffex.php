@@ -166,11 +166,8 @@ class cf
         $mese   = (int) @$dn[1];
         $anno   = (int) @$dn[0];
         
-        if ($anno > 1000)
-            $aa = substr($anno, -2); //Removes the first two numbers from the year.
-        else
-            $aa = $anno; //if the user inputs XX instead if XXXX, the number is already right.
-            
+        $aa = substr($anno, -2); //Removes the first two numbers from the year.
+        
         $mm = $this->_mesi[$mese]; //Fetchs the letter associated with the person's month.
         
         if ($gen != "Male")
