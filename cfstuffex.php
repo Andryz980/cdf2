@@ -162,10 +162,10 @@ class cf
     {        
         $dn = explode('-', $data); //Separates the "01/01/1900" format in an array containing the single elements.
 
-        $giorno = (int) @$dn[2];
+        $giorno = (int) @$dn[0];
         $mese   = (int) @$dn[1];
-        $anno   = (int) @$dn[0];
-        echo $anno;
+        $anno   = (int) @$dn[2];
+        
         $aa = substr($anno, -2); //Removes the first two numbers from the year.
         
         $mm = $this->_mesi[$mese]; //Fetchs the letter associated with the person's month.
