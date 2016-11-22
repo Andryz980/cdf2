@@ -94,9 +94,8 @@ function callofthewild($name, $surname, $bday, $gen, $city) //Start.
      
 function finalprint($output)
 {
-      echo "<div class="col-xs-12>$output</div>";
+      echo "<div class="col-xs-12">$output</div>";
 }
-     
      
 class cf
 {
