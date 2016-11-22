@@ -95,9 +95,7 @@ function callofthewild($name, $surname, $bday, $gen, $city) //Start.
      
 function finalprint($output)
 {
-      echo '<script language="javascript">';
-      echo 'alert($output)';
-      echo '</script>';
+      echo '<script language="javascript">alert("' . $output . '")</script>';
 }
      
      
