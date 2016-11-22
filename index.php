@@ -29,7 +29,7 @@
         
       <div class="col-xs-12">
         <label>Data di nascita:</label>
-        <input type="date" name="bday">
+        <input type="date" name="bday" placeholder="gg-mm-aa">
       </div>
       
         <div class="col-xs-12" style="height:20px;"></div>
