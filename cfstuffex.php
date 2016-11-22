@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    Il tuo codice fiscale è: 
 <?php
 
 //Special thanks to Nicholas Miazzo, he helped me both deploying this stuff and general bug fixing. I owe him a coffee, that's for sure.
