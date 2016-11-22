@@ -95,7 +95,7 @@ function callofthewild($name, $surname, $bday, $gen, $city) //Start.
      
 function finalprint($output)
 {
-      echo "<div class="col-xs-12">Codice calcolato: $output</div>";
+      echo "window.alert($output)";
 }
      
      
