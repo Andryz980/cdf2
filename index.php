@@ -15,7 +15,7 @@
 
   <div class="container">
     <h2 class="text-center">Calcolo codice fiscale</h2>
-    <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+    <form method="post">
       <div class="col-xs-6">
         <label>Nome:</label>
         <input class="form-control" name="name">
@@ -84,7 +84,7 @@
         $gen = $_POST["gen"]; 
         $city = $_POST["city"]; 
         
-        finalprint(callofthewild($name, $surname, $bday, $gen, $city));
+        echo callofthewild($name, $surname, $bday, $gen, $city));
     }
 function callofthewild($name, $surname, $bday, $gen, $city) //Start.
 {
@@ -92,10 +92,10 @@ function callofthewild($name, $surname, $bday, $gen, $city) //Start.
     return $tmp->startdotexe($name, $surname, $bday, $gen, $city);
 }
      
-function finalprint($output)
+/*function finalprint($output)
 {
       echo "<div class="col-xs-12">Codice calcolato: $output</div>";
-}
+}*/
      
 class cf
 {
